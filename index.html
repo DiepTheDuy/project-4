@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css-bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/all.css"> -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js-jquery/jquery.3.4.1.js"></script> 
+    
+    <script src="assets/js-jquery-popper/popper.min.js"></script>    
+    <script src="assets/js-bootstrap/bootstrap.min.js"></script>
+    <title>project-4</title>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $('#carousel-slide').carousel({
+                interval: 4000,
+                ride: 'carousel'
+            });
+            $('#back-top').on('click',function(){
+                $('body,html').stop().animate({scrollTop: 0},1000);
+            });            
+        });
+    </script>
+    <div id="wrapper">
+        <div id="header">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-md-2">
+                        <a id="logo" href="" class="d-block">
+                            <img src="img/header/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-10">
+                        <nav id="wp-main-menu" class="d-block ">
+                            <ul id="main-menu" class=" list-unstyled list-inline ">
+                                <li id="menu-item" class="list-inline-item active">
+                                    <a class="text-decoration-none d-block text-uppercase" href="">Home</a>
+                                </li>
+                                <li id="menu-item" class="list-inline-item">
+                                    <a class="text-decoration-none d-block text-uppercase" href="">About</a>
+                                </li>
+                                <li id="menu-item" class="list-inline-item">
+                                    <a class="text-decoration-none d-block text-uppercase" href="">work</a>
+                                </li>
+                                <li id="menu-item" class="list-inline-item">
+                                    <a class="text-decoration-none d-block text-uppercase" href="">Team</a>
+                                </li>
+                                <li id="menu-item" class="list-inline-item">
+                                    <a class="text-decoration-none d-block text-uppercase" href="">Services</a>
+                                </li>
+                                <li id="menu-item" class="list-inline-item">
+                                    <a class="text-decoration-none d-block text-uppercase" href="">Features</a>
+                                </li>
+                                <li id="menu-item" class="list-inline-item">
+                                    <a class="text-decoration-none d-block text-uppercase" href="">contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div class="row no-gutters">
+                <div id="content-slider" class="col-md-12">
+                    <div class="carousel slide" id="carousel-slide">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-slide" class="active" data-slide-to="0"></li>
+                            <li data-target="#carousel-slide" data-slide-to="1"></li>
+                            <li data-target="#carousel-slide" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/content/slider.png" alt="" class="d-block w-100">
+                                <div id="slider-caption" class="carousel-caption">
+                                    <div id="slider-caption-header" class="text-uppercase">welcome to our marketplace
+                                    </div>
+                                    <div id="slider-caption-body">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Sed nisi metus, tristique ndolor
+                                        non, ornare sagittis dolor. Nulla vestibulu lacus ...</div>
+                                    <div id="slider-btn">
+                                        <a id="slider-btn-more" class="d-inline-block text-decoration-none" href="">View
+                                            more</a>
+                                        <a id="slider-btn-videp" class="d-inline-block text-decoration-none"
+                                            href="">Video tour</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/content/slider.png" alt="" class="d-block w-100">
+                                <div id="slider-caption" class="carousel-caption">
+                                    <div id="slider-caption-header" class="text-uppercase">welcome to our marketplace
+                                    </div>
+                                    <div id="slider-caption-body">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Sed nisi metus, tristique ndolor
+                                        non, ornare sagittis dolor. Nulla vestibulu lacus ...</div>
+                                    <div id="slider-btn">
+                                        <a id="slider-btn-more" class="d-inline-block text-decoration-none" href="">View
+                                            more</a>
+                                        <a id="slider-btn-videp" class="d-inline-block text-decoration-none"
+                                            href="">Video tour</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/content/slider.png" alt="" class="d-block w-100">
+                                <div id="slider-caption" class="carousel-caption">
+                                    <div id="slider-caption-header" class="text-uppercase">welcome to our marketplace
+                                    </div>
+                                    <div id="slider-caption-body">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Sed nisi metus, tristique ndolor
+                                        non, ornare sagittis dolor. Nulla vestibulu lacus ...</div>
+                                    <div id="slider-btn">
+                                        <a id="slider-btn-more" class="d-inline-block text-decoration-none" href="">View
+                                            more</a>
+                                        <a id="slider-btn-videp" class="d-inline-block text-decoration-none"
+                                            href="">Video tour</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content-model" class="col-md-12">
+                    <div class="container">
+                        <div class="row no-gutters">
+                            <div id="content-header" class="col-md-12">
+                                we are modest
+                            </div>
+                            <div id="content-model-info" class="col-md-7">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique
+                                    ndolor non, ornare sagittis dolor. Nulla vestibulu lacus sed molestie gravida.
+                                    Crferm entum quismagna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna,
+                                    quis lacusullamcorper at. </p>
+                                <p>Phasellus sollicitudin ante eros ornare, <a class="text-decoration-none" href="">sit
+                                        amet luctus lorem semper</a> . Suspendisse
+                                    posuere, quamdictum consectetur, augue metus pharetra tellus, eu feugiatloreg
+                                    egetnisi. Cras ornare bibendum ante, ut bibendum odio convallis eget. vel sodales
+                                    arcu vestibulum</p>
+                                <div id="content-model-info-more">
+                                    <a id="content-model-info-more-icon" class="d-inline-block" href="">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                    <a id="content-model-info-more-icon" class="d-inline-block" href="">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                    <a id="content-model-info-more-icon" class="d-inline-block" href="">
+                                        <i class="fa fa-google" aria-hidden="true"></i>
+                                    </a>
+                                    <a id="content-model-info-more-icon" class="d-inline-block" href="">
+                                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                                    </a>
+                                    <a id="content-model-info-more-icon" class="d-inline-block" href="">
+                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="content-model-detail" class="col-md-5">
+                                <div id="content-model-detail-item">
+                                    <div id="content-model-detail-item-header">01</div>
+                                    <div id="content-model-detail-item-body">
+                                        <p id="content-model-detail-item-body-cap">Dedication to the customers</p>
+                                        <p id="content-model-detail-item-body-info">Integer vel lacus non dui
+                                            ullamcorper venenatis. Aliquam vitae tristique
+                                            nisi, vitae ullamcorper risus. Nam porttitor blandit</p>
+                                    </div>
+                                </div>
+                                <div id="content-model-detail-item">
+                                    <div id="content-model-detail-item-header">02</div>
+                                    <div id="content-model-detail-item-body">
+                                        <p id="content-model-detail-item-body-cap">working closely with our clients</p>
+                                        <p id="content-model-detail-item-body-info">Sed blandit nisi urna, sed
+                                            pellentesque enim consectetur vitae. Suspendisse ut vehicula nibh.</p>
+                                    </div>
+                                </div>
+                                <div id="content-model-detail-item">
+                                    <div id="content-model-detail-item-header">03</div>
+                                    <div id="content-model-detail-item-body">
+                                        <p id="content-model-detail-item-body-cap">increase happiness</p>
+                                        <p id="content-model-detail-item-body-info">Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. Nulla eleifend laoreet euismod. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content-team" class="col-md-12">
+                    <div class="container">
+                        <div class="row no-gutters d-block">
+                            <div id="content-header" class="col-md-12">
+                                meet the team
+                            </div>
+                            <div id="wp-team">
+                                <div id="team-mate" class="overflow-hidden">
+                                    <div id="team-mate-pic">
+                                        <img src="img/content/team-1.png" alt="">
+                                        <div id="opacity-team"></div>
+
+                                        <div id="team-icon">
+                                            <a id="opacity-team-icon" class="d-inline-block" href="">
+                                                <i class="fa fa-facebook-f" aria-hidden="true"></i>
+                                            </a>
+                                            <a id="opacity-team-icon" class="d-inline-block" href="">
+                                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                            </a>
+                                            <a id="opacity-team-icon" class="d-inline-block" href="">
+                                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div id="team-mate-info">
+                                        <div id="team-mate-info-name">
+                                            Gloria Bromley
+                                        </div>
+                                        <div id="team-mate-info-job">
+                                            CEO and Founder
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="team-mate" class=" overflow-hidden">
+                                    <div id="team-mate-pic">
+                                        <img src="img/content/team-2.png" alt="">
+                                        <div id="opacity-team"></div>
+
+                                        <div id="team-icon">
+                                            <a id="opacity-team-icon" class="d-inline-block" href="">
+                                                <i class="fa fa-facebook-f" aria-hidden="true"></i>
+                                            </a>
+                                            <a id="opacity-team-icon" class="d-inline-block" href="">
+                                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                            </a>
+                                            <a id="opacity-team-icon" class="d-inline-block" href="">
+                                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div id="team-mate-info">
+                                        <div id="team-mate-info-name">
+                                            Paul Torres
+                                        </div>
+                                        <div id="team-mate-info-job">
+                                            Head of Development
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="team-mate" class="overflow-hidden">
+                                    <div id="team-mate-pic">
+                                        <img src="img/content/team-3.png" alt="">
+                                        <div id="opacity-team"></div>
+
+                                        <div id="team-icon">
+                                            <a id="opacity-team-icon" class="d-inline-block" href="">
+                                                <i class="fa fa-facebook-f" aria-hidden="true"></i>
+                                            </a>
+                                            <a id="opacity-team-icon" class="d-inline-block" href="">
+                                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                            </a>
+                                            <a id="opacity-team-icon" class="d-inline-block" href="">
+                                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div id="team-mate-info">
+                                        <div id="team-mate-info-name">
+                                            Judith Gillette
+                                        </div>
+                                        <div id="team-mate-info-job">
+                                            Graphic Desinger
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="team-mate" class="overflow-hidden">
+                                    <div id="team-mate-pic">
+                                        <img src="img/content/team-2.png" alt="">
+                                        <div id="opacity-team"></div>
+
+                                        <div id="team-icon">
+                                            <a id="opacity-team-icon" class="d-inline-block" href="">
+                                                <i class="fa fa-facebook-f" aria-hidden="true"></i>
+                                            </a>
+                                            <a id="opacity-team-icon" class="d-inline-block" href="">
+                                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                            </a>
+                                            <a id="opacity-team-icon" class="d-inline-block" href="">
+                                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div id="team-mate-info">
+                                        <div id="team-mate-info-name">
+                                            Delores Reed
+                                        </div>
+                                        <div id="team-mate-info-job">
+                                            Client Service Director
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content-work" class="col-md-12">
+                    <div class="container">
+                        <div class="row no-gutters">
+                            <div id="content-header-dark" class="col-md-12">
+                                Lovely work
+                            </div>
+                            <div id="wp-work-pic" class="d-flex">
+                                <div id="work-pic-item" class="overflow-hidden">
+                                    <a class="d-block text-decoration-none" href="">
+                                        <img src="img/content/work-1.png" alt="">
+                                        <div id="opacity-work-pic"></div>
+                                        <div id="opacity-work-pic-icon">+</div>
+                                        <div id="opacity-work-pic-info">
+                                            partnership guidlines
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="work-pic-item" class="overflow-hidden">
+                                    <a class="d-block text-decoration-none" href="">
+                                        <img src="img/content/work-2.png" alt="">
+                                        <div id="opacity-work-pic"></div>
+                                        <div id="opacity-work-pic-icon">+</div>
+                                        <div id="opacity-work-pic-info">
+                                            partnership guidlines
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="work-pic-item" class="overflow-hidden">
+                                    <a class="d-block text-decoration-none" href="">
+                                        <img src="img/content/work-3.png" alt="">
+                                        <div id="opacity-work-pic"></div>
+                                        <div id="opacity-work-pic-icon">+</div>
+                                        <div id="opacity-work-pic-info">
+                                            partnership guidlines
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="work-pic-item" class="overflow-hidden">
+                                    <a class="d-block text-decoration-none" href="">
+                                        <img src="img/content/work-4.png" alt="">
+                                        <div id="opacity-work-pic"></div>
+                                        <div id="opacity-work-pic-icon">+</div>
+                                        <div id="opacity-work-pic-info">
+                                            partnership guidlines
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="work-pic-item" class="overflow-hidden">
+                                    <a class="d-block text-decoration-none" href="">
+                                        <img src="img/content/work-5.png" alt="">
+                                        <div id="opacity-work-pic"></div>
+                                        <div id="opacity-work-pic-icon">+</div>
+                                        <div id="opacity-work-pic-info">
+                                            partnership guidlines
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="work-pic-item" class="overflow-hidden">
+                                    <a class="d-block text-decoration-none" href="">
+                                        <img src="img/content/work-6.png" alt="">
+                                        <div id="opacity-work-pic"></div>
+                                        <div id="opacity-work-pic-icon">+</div>
+                                        <div id="opacity-work-pic-info">
+                                            partnership guidlines
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="content-work-more" class="d-inline-block w-100">
+                                <a href="" class="d-inline-block text-decoration-none text-uppercase">
+                                    show me more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content-do" class="col-md-12">
+                    <div class="container">
+                        <div class="row no-gutters">
+                            <div id="content-header" class="col-md-12">
+                                what we do
+                            </div>
+                            <div id="wp-do" class="d-flex">
+                                <div id="do-item">
+                                    <img src="img/content/cogs.png" alt="">
+                                    <p id="do-item-header">Easy theme Setup</p>
+                                    <p id="do-item-body">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
+                                        Maecenas a justo nec velit egestas fermentum.</p>
+                                </div>
+                                <div id="do-item">
+                                    <img src="img/content/pencil.png" alt="">
+                                    <p id="do-item-header">pixel perfect design</p>
+                                    <p id="do-item-body">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
+                                        Maecenas a justo nec velit egestas fermentum.</p>
+                                </div>
+                                <div id="do-item">
+                                    <img src="img/content/mobile.png" alt="">
+                                    <p id="do-item-header">responsive display</p>
+                                    <p id="do-item-body">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
+                                        Maecenas a justo nec velit egestas fermentum.</p>
+                                </div>
+                                <div id="do-item">
+                                    <img src="img/content/clock.png" alt="">
+                                    <p id="do-item-header">24/7 support</p>
+                                    <p id="do-item-body">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
+                                        Maecenas a justo nec velit egestas fermentum.</p>
+                                </div>
+                                <div id="do-item">
+                                    <img src="img/content/cogs.png" alt="">
+                                    <p id="do-item-header">Easy theme Setup</p>
+                                    <p id="do-item-body">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
+                                        Maecenas a justo nec velit egestas fermentum.</p>
+                                </div>
+                                <div id="do-item">
+                                    <img src="img/content/pencil.png" alt="">
+                                    <p id="do-item-header">pixel perfect design</p>
+                                    <p id="do-item-body">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
+                                        Maecenas a justo nec velit egestas fermentum.</p>
+                                </div>
+                                <div id="do-item">
+                                    <img src="img/content/mobile.png" alt="">
+                                    <p id="do-item-header">responsive display</p>
+                                    <p id="do-item-body">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
+                                        Maecenas a justo nec velit egestas fermentum.</p>
+                                </div>
+                                <div id="do-item">
+                                    <img src="img/content/clock.png" alt="">
+                                    <p id="do-item-header">24/7 support</p>
+                                    <p id="do-item-body">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
+                                        Maecenas a justo nec velit egestas fermentum.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content-feature" class="col-md-12">
+                    <div class="container">
+                        <div class="row no-gutters d-block">
+                            <div id="content-header-dark" class="col-md-12">
+                                feature
+                            </div>
+                            <div id="wp-feature">
+                                <div id="feature-item">
+                                    <a href="" class="d-block text-decoration-none">
+                                        <img src="img/content/feature-1.png" alt="">
+                                        <p id="feature-item-header">
+                                            Product Design: Eames Chairs
+                                        </p>
+                                        <p id="feature-item-body">
+                                            Eames designs are certainly iconic. Everyone of us know at least two or
+                                            three of
+                                            their famous chairs. I would even risk saying that most of us dream about
+                                            having
+                                            a nice Eames.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div id="feature-item">
+                                    <a href="" class="d-block text-decoration-none">
+                                        <img src="img/content/feature-2.png" alt="">
+                                    <p id="feature-item-header">
+                                        Elegant and Colorful Logos
+                                    </p>
+                                    <p id="feature-item-body">
+                                        I’ve always found logo design to be one of the most challenging things to get
+                                        right. There’s so much that a logo can say about a brand without actually saying
+                                        it.
+                                    </p>
+                                    </a>
+                                </div>
+                                <div id="feature-item">
+                                    <a href="" class="d-block text-decoration-none">
+                                        <img src="img/content/feature-3.png" alt="">
+                                    <p id="feature-item-header">
+                                        A Showcase of Creative
+                                    </p>
+                                    <p id="feature-item-body">
+                                        It’s always interesting to see another designer’s take on a famous website, app
+                                        or even physical product. Different designers add their own personality and
+                                        style.
+                                    </p>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cotnent-location" class="col-md-12">
+                    <div class="container">
+                        <div class="row">
+                            <div id="content-header" class="col-md-12">
+                                stay in touch
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="img/content/map.png" alt="">
+                    </div>
+                    <div class="container">
+                        <div class="row no-gutters">
+                            <div id="wp-location">
+                                <div id="wp-location-info" class="w-50">
+                                    <p id="wp-location-info-header">
+                                        contact information
+                                    </p>
+                                    <p id="wp-location-info-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus,
+                                        tristique nec dolor non, ornare sagittis dolor. Nulla vestibulum lacus sed
+                                        molestie gravida.
+                                    </p>
+                                    <p id="wp-location-info-body">
+                                        Cras fermentum elit quis magna congue, <a class="text-decoration-none"
+                                            href="">vel sodales</a> arcu vestibulum. Nunc
+                                        lobortis dui magna, quis dapibus lacus
+                                    </p>
+                                </div>
+                                <div id="wp-location-form" class="w-50">
+                                    <form action="">
+                                        <div id="wp-location-form-header">
+                                            <div class="row now-gutters">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="username">Username</label>
+                                                        <input type="text" class="form-control" name="username"
+                                                            id="username">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="email">Email</label>
+                                                        <input type="email" class="form-control" name="email"
+                                                            id="email">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="wp-location-form-body">
+                                            <div class="form-group">
+                                                <label for="detail">Your message</label>
+                                                <textarea class="form-control" name="detail" id="detail" cols="30"
+                                                    rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn">Send Message</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div id="coppy-right" class="col-md-8">
+                        <span>© Copyright 2014 by PSD Booster. All Rights Reserved.</span>
+                    </div>
+                    <div id="footer-contact" class="col-md-4">
+                        <a class="d-inline-block" href="">
+                            <i class="fa fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a class="d-inline-block" href="">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a class="d-inline-block" href="">
+                            <i class="fa fa-google" aria-hidden="true"></i>
+                        </a>
+                        <a class="d-inline-block" href="">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                        </a>
+                        <a class="d-inline-block" href="">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="back-top">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </div>
+    </div>
+</body>
+
+</html>
